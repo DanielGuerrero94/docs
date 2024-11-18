@@ -162,7 +162,7 @@ information about the GPU using this API:
 const adapter = await navigator.gpu.requestAdapter();
 if (adapter) {
   // Print out some basic details about the adapter.
-  const adapterInfo = await adapter.requestAdapterInfo();
+  const adapterInfo = adapter.info;
 
   // On some systems this will be blank...
   console.log(`Found adapter: ${adapterInfo.device}`);
